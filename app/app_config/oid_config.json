@@ -22,7 +22,7 @@
       },
       "file": {
         "class": "logging.FileHandler",
-        "filename": "/tmp/log/logs.log",
+        "filename": "/var/log/eudiw-issuer/eudiw-issuer.log",
         "formatter": "default"
       }
     },
@@ -33,7 +33,7 @@
     }
   },
   "port": 5000,
-  "domain": "issuer.eudiw.dev",
+  "domain": "eudiw-issuer.ama.projj.eu",
   "server_name": "{domain}",
   "base_url": "https://{domain}",
   "op": {
@@ -364,7 +364,7 @@
     "ca_bundle": null,
     "verify_user": false,
     "port": 5000,
-    "domain": "issuer.eudiw.dev",
+    "domain": "eudiw-issuer.ama.projj.eu",
     "debug": true
   }
 }

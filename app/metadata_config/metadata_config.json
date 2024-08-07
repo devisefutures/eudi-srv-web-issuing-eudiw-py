@@ -1,9 +1,9 @@
 {
-  "credential_issuer": "https://issuer.eudiw.dev",
-  "credential_endpoint": "https://issuer.eudiw.dev/credential",
-  "batch_credential_endpoint": "https://issuer.eudiw.dev/batch_credential",
-  "notification_endpoint": "https://issuer.eudiw.dev/notification",
-  "deferred_credential_endpoint": "https://issuer.eudiw.dev/deferred_credential",
+  "credential_issuer": "https://eudiw-issuer.ama.projj.eu",
+  "credential_endpoint": "https://eudiw-issuer.ama.projj.eu/credential",
+  "batch_credential_endpoint": "https://eudiw-issuer.ama.projj.eu/batch_credential",
+  "notification_endpoint": "https://eudiw-issuer.ama.projj.eu/notification",
+  "deferred_credential_endpoint": "https://eudiw-issuer.ama.projj.eu/deferred_credential",
   "credential_configurations_supported": {
     
 
