@@ -56,9 +56,9 @@ class ConfCountries:
         formCountry: {
             "name": "FormPT",
             "pid_url": cfgserv.service_url + "pid/form",
-            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privkey/PID-DS-0005.pid-ds-0002.key.pem",
-            "pid_mdoc_privkey_passwd": b"pid-ds-0002",  # None or bytes
-            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-0005.cert.der",
+            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privkey/PID-DS-PT.key.pem",
+            "pid_mdoc_privkey_passwd": b"123456",  # None or bytes
+            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-PT.cert.der",
             "un_distinguishing_sign": "P",
             "supported_credentials": [
                 "eu.europa.ec.eudi.pid_mdoc",
@@ -97,9 +97,9 @@ class ConfCountries:
         # },
         "PT": {
             "name": "Portugal",
-            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privkey/PID-DS-0005.pid-ds-0002.key.pem",
-            "pid_mdoc_privkey_passwd": b"pid-ds-0002",  # None or bytes
-            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-0005.cert.der",
+            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privkey/PID-DS-PT.key.pem",
+            "pid_mdoc_privkey_passwd": b"123456",  # None or bytes
+            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-PT.cert.der",
             "un_distinguishing_sign": "P",
             "supported_credentials": [
                 "eu.europa.ec.eudi.pid_mdoc",
