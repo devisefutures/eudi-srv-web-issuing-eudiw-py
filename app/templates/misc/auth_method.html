@@ -11,9 +11,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"
-        type="image/vnd.microsoft.icon" />
-    <link rel="icon" href="{{ url_for('static', filename='images/favicon.gif') }}" type="image/gif" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png" />
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}" />
     <link href="{{ url_for('static', filename='bootstrap-3.4.1-dist/css/bootstrap.min.css') }}" rel="stylesheet"
         type="text/css" />
@@ -34,7 +32,7 @@
     <meta name="referrer" content="no-referrer">
     <script type="text/javascript"
         src="{{ url_for('static', filename='scripts/loc/loc_en_9.7.1.20.1679559965505.js') }}" charset="UTF-8"></script>
-    <title>Request Credentials for your EUDI Wallet</title>
+    <title>Seleção do método de autenticação</title>
 </head>
 
 <body id="responsive-main-nav1">
@@ -42,18 +40,18 @@
         <header role="banner" class="main-header">
             <div class="container">
                 <div class="row">
-                    <img src="{{url_for('static', filename='ic-logo.svg')}}">
+                    <img src="{{url_for('static', filename='ama.jpg')}}" width="200">
                 </div>
             </div>
         </header>
         <div role="main" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Authentication Method Selection</h1>
+                    <h1>Seleção do método de autenticação</h1>
                     <div id="content" class="content-wrap1 content-center col-md-6 col-sm-7">
                         <div class="genericErrors" id="genericErrorsDesc">
                         </div>
-                        <h2>Please select Authentication Method</h2>
+                        <h2>Por favor selecione o método de autenticação</h2>
                         <p id="error_auth">{{error}}</p>
                         <form id="selectCredential" method="post" action="{{redirect_url}}dynamic/auth_method"
                             accept-charset="UTF-8" enctype="application/x-www-form-urlencoded;charset=UTF-8"
@@ -63,8 +61,7 @@
                                     <label >
                                         <input id="optionsRadios" type="radio" name="optionsRadios"
                                                 value="link1" style="transform: scale(1.3);">
-                                            PID Authentication <img src="{{url_for('static', filename='ic-logo.svg')}}"
-                                                width="30%">
+                                            Autenticação por PID
                                     </label>
                                 {% endif %}
                             
@@ -72,17 +69,13 @@
                                     <label style="padding-top: 5%;">
                                         <input id="optionsRadios"  type="radio" name="optionsRadios"
                                                 value="link2" style="transform: scale(1.3);">
-                                                Country Selection       <img style="padding-left: 5%;" src="{{url_for('static', filename='EU_flag.jpg')}}"
-                                                width="17%">
+                                                Autenticação disponibilizada pelo País
                                     </label>
                                 {% endif %}
                             </div>
 
                             <span class="more-submit">
-                                <input type="submit" name="proceed" accesskey="S" value="Submit" class="btn btn-primary"
-                                    title="Submit" id="btncheck" disabled ><input type="submit" name="Cancelled"
-                                    accesskey="C" value="Cancel" id="cancelBtnId"
-                                    class="btn btn-cancel btn-alternate cancellable" title="Cancel" />
+                                <input type="submit" name="proceed" accesskey="S" value="Submeter" class="btn btn-primary" title="Submeter" id="btncheck" disabled><input type="submit" name="Cancelled" accesskey="C" value="Cancelar" id="cancelBtnId" class="btn btn-cancel btn-alternate cancellable" title="Cancelar" />
                             </span>
                         </form>
 

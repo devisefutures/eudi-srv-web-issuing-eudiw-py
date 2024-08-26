@@ -10,8 +10,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/vnd.microsoft.icon" />
-    <link rel="icon" href="{{ url_for('static', filename='images/favicon.gif') }}" type="image/gif" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png" />
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}" />
     <link href="{{ url_for('static', filename='bootstrap-3.4.1-dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='css/stylesheets/custom/custom_en_9.7.1.20.1679559965505.css') }}" media="all" rel="stylesheet" type="text/css" />
@@ -23,7 +22,7 @@
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/respond/respond-1.4.2.js') }}" charset="UTF-8"></script>
     <meta name="referrer" content="no-referrer">
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/loc/loc_en_9.7.1.20.1679559965505.js') }}" charset="UTF-8"></script>
-    <title>Request Credentials for your EUDI Wallet</title>
+    <title>Pedido de credenciais para a sua EUDI Wallet</title>
 </head>
 
 <body id="responsive-main-nav">
@@ -37,14 +36,14 @@
         <div role="main" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Request Credentials for your EUDI Wallet</h1>
+                    <h1>Pedido de credenciais para a sua EUDI Wallet</h1>
                     <div id="content" class="content-wrap content-center col-md-6 col-sm-7">
                         <div class="genericErrors" id="genericErrorsDesc">
                         </div>
-                        <h2>Please select your country of origin</h2>
+                        <h2>Por favor selecione o país de origem</h2>
                        <form id="selectCountryForm" method="post" action="{{redirect_url}}dynamic/?authorization_details={{authorization_details}}" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded;charset=UTF-8" autocapitalize="off" spellcheck="false">
-                            <h3>Test Credentials Provider</h3>
-                            <p>This Credentials Provider should only be used for issuing Credentials for testing purposes.</p>
+                            <h3>Emissor de credenciais (para testes)</h3>
+                            <p>As credenciais emitidas por este Emissor apenas devem ser utiizadas para efeitos de testes.</p>
                             <div id="eidasCountries">
                                 {% for key, value in countries.items() %}
                                 <div class="flag">
@@ -121,7 +120,7 @@
 
 
                             <span class="more-submit">
-                                <input type="submit" name="proceed" accesskey="S" value="Submit" class="btn btn-primary" title="Submit" /><input type="submit" name="Cancelled" accesskey="C" value="Cancel" id="cancelBtnId" class="btn btn-cancel btn-alternate cancellable" title="Cancel" />
+                                <input type="submit" name="proceed" accesskey="S" value="Submeter" class="btn btn-primary" title="Submeter" /><input type="submit" name="Cancelled" accesskey="C" value="Cancelar" id="cancelBtnId" class="btn btn-cancel btn-alternate cancellable" title="Cancelar" />
                             </span>
                         </form>
                         

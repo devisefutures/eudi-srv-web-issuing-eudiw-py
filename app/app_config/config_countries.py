@@ -108,7 +108,7 @@ class ConfCountries:
                     },
                 },
                 "response_type": "token",
-                "client_id": "6285415231191573957",
+                "client_id": "7581881942535223091",
             },
             "attribute_request": {
                 "url": "https://preprod.autenticacao.gov.pt/oauthresourceserver/api/AttributeManager?token=",

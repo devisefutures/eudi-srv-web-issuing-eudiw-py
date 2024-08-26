@@ -82,10 +82,10 @@ class ConfService:
     pid_validity = 90
 
     # PID issuing Authority
-    pid_issuing_authority = "Emissor de PID da Agência para a Modernização Administrativa"
+    pid_issuing_authority = "Agencia para a Modernizacao Administrativa, I.P"
 
     # PID Organization ID
-    pid_organization_id = "AMA - Agência para a Modernização Administrativa, I.P., Portugal"
+    pid_organization_id = "AMA - Agencia para a Modernizacao Administrativa, I.P., Portugal"
 
     # mDL namespace
     mdl_namespace = "org.iso.18013.5.1"
@@ -97,7 +97,7 @@ class ConfService:
     mdl_validity = 7
 
     # MDL issuing Authority
-    mdl_issuing_authority = "Emissor de mDL da Agência para a Modernização Administrativa"
+    mdl_issuing_authority = "Agencia para a Modernizacao Administrativa, I.P"
 
     # QEAA namespace
     qeaa_namespace = "eu.europa.ec.eudiw.qeaa.1"
@@ -106,7 +106,7 @@ class ConfService:
     qeaa_validity = 90
 
     # QEAA issuing Authority
-    qeaa_issuing_authority = "Emissor de (Q)EAA da Agência para a Modernização Administrativa"
+    qeaa_issuing_authority = "Agencia para a Modernizacao Administrativa, I.P"
 
     # QEAA doctype
     qeaa_doctype = "eu.europa.ec.eudiw.qeaa.1"
@@ -208,8 +208,8 @@ class ConfService:
 
     common_name={
         "eu.europa.ec.eudi.pid.1": "PID",
-        "org.iso.18013.5.1.mDL": "Carta de condução (mobile Driving License)",
-        "eu.europa.ec.eudi.pseudonym.age_over_18.1": "Verificação de idade"
+        "org.iso.18013.5.1.mDL": "Carta de condução móvel (mobile Driving License)",
+        "eu.europa.ec.eudi.pseudonym.age_over_18.1": "Idade acima/abaixo de 18 anos"
     }
 
     config_doctype = {
